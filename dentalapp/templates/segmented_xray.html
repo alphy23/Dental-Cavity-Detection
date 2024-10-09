@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-ray Image</title>
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> X-ray Image</h1>
+        <!-- Assuming segmented_img is a base64 encoded image string -->
+        <img src="data:image/jpeg;base64,{{ segmented_img }}" alt="Segmented X-ray Image">
+
+        <h3>Damage Score :{{damage_score}}</h3>
+    </div>
+</body>
+</html>
